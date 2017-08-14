@@ -9,12 +9,14 @@
 
 var longestPlaceName = "Taumatawhakatangihangakoauauotamateaturipukakapiki- maungahoronukupokaiwhenuakitanatahu";  //Yes, this is a real place located in Porangahau, Central Hawke's Bay.
 
-
+var howManyLetters = longestPlaceName.length
+console.log(howManyLetters)
 
 /*Next, concatenate and console.log the following phrase:
 "x is the longest place name in the world and has y letters in its name."
 where x represents the value at `longestPlaceName` and y represents the value at `howManyLetters`*/
 
+console.log(longestPlaceName + " is the longest place name in the world and has " + howManyLetters +" in its name")
 
 /*The string.charAt() method returns the character at the specified index (position).*/
 
@@ -22,7 +24,8 @@ where x represents the value at `longestPlaceName` and y represents the value at
 
 var iDidntKnow = "The national animal of Scotland is the Unicorn";
 
-
+var fifthLetter = iDidntKnow.charAt(5)
+console.log(fifthLetter)
 
 /*The indexOf() method returns the index (position) of the first occurence of a specified text in a string.*/
 
