@@ -27,12 +27,15 @@ var iDidntKnow = "The national animal of Scotland is the Unicorn";
 var fifthLetter = iDidntKnow.charAt(5)
 console.log(fifthLetter)
 
-/*The indexOf() method returns the index (position) of the first occurence of a specified text in a string.*/
+/*The string.indexOf() method returns the index (position) of the first occurence of a specified text in a string.*/
 
 /*3. Declare a variable named `worldLocator` and find the index (position) of the word "world" in the string below. Console.log your result.*/
 
 var randomFact = "All pandas in the world are on loan from China.";
+var worldLocator = randomFact.indexOf("world")
+console.log(worldLocator)
 
+//looks like it tells you the location of the character right before the word you are looking for ?//
 
 
 /*The slice() method extracts a part of a string and returns the extracted part into a new string. This method takes 2 parameters: the starting index (position) and the ending index (position)*/
@@ -41,7 +44,17 @@ var randomFact = "All pandas in the world are on loan from China.";
 
 var edward = "People are afraid of me because I am different";
 
+var scissorHand = edward.slice(7,17)
+console.log("are afraid:",scissorHand)
 
+var scissorHand = edward.slice(10)
+console.log("test:",scissorHand)
+
+var scissorHand = edward.slice(25)
+console.log("test:",scissorHand)
+
+var scissorHand = edward.slice(1,2)
+console.log("test:",scissorHand)
 
 /*The replace() method replaces a specified value with another value in a string.*/
 
@@ -49,6 +62,12 @@ var edward = "People are afraid of me because I am different";
 
 var grasshopper = "In order to taste my cup of water you must first fill your cup.";
 
+var theSifu = grasshopper.replace("fill", "empty");
+console.log("replacedfillwithempty:",theSifu);
+
+
+var theSifu = grasshopper.replace("taste","drink")
+console.log("test:",theSifu)
 
 
 /*The toLowerCase() method converts the characters in a string to lower case.*/
@@ -57,6 +76,8 @@ var grasshopper = "In order to taste my cup of water you must first fill your cu
 
 var bigTime = "BRUuHHHH, I AM DA GreaTest!";
 
+var smallKine = bigTime.toLowerCase()
+console.log(smallKine)
 
 
 /*The toUpperCase() method converts the characters in a string to upper case.*/
@@ -65,13 +86,22 @@ var bigTime = "BRUuHHHH, I AM DA GreaTest!";
 
 var bandName = "the beatles";
 
-
+var bigBand = bandName.toUpperCase()
+console.log(bigBand)
 
 /*The split() method converts a string into an array, by separating the string into substrings.*/
 
 /*8. Declare a variable named `oreoList` that will convert the string below into an array of strings. Console.log your result.*/
 
 var oreos = "red velvet, cookie dough, peanut butter, banana split, birthday cake";
+
+var oreoList = oreos.split()
+console.log(oreoList)
+
+var newlengthtest = oreoList.length
+console.log(newlengthtest)
+
+//length shows up as 1 using the above// function ends?
 
 
 
@@ -82,7 +112,8 @@ var oreos = "red velvet, cookie dough, peanut butter, banana split, birthday cak
 var drinkMenu = "rum, gin, vodka, kool-aid, haterade";
 
 
-
+var favDrink = drinkMenu.substr(5,3)
+console.log(favDrink)
 
 
 
